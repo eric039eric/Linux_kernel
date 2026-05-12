@@ -1,0 +1,1172 @@
+eric0@ERIC039ERIC:~$ sudo apt update
+sudo apt full-upgrade -y
+sudo apt autoremove -y
+[sudo: authenticate] Password:
+Get:1 http://security.ubuntu.com/ubuntu resolute-security InRelease [136 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu resolute InRelease
+Get:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [136 kB]
+Get:4 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [2848 B]
+Get:5 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [17.6 kB]
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Get:7 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [71.0 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [21.6 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [2844 B]
+Get:10 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [17.6 kB]
+Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [52.3 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [11.1 kB]
+Fetched 468 kB in 2s (201 kB/s)
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+eric0@ERIC039ERIC:~$ sudo apt install -y \
+> git git-email build-essentail bc bison flex libssl-dev libelf-dev \
+> fakeroot dwarves cpio rsync curl wget perl python3 python3-pip\
+> patchutils diffstat pahole
+Error: Unable to locate package build-essentail
+Error: Unable to locate package python3-pippatchutils
+eric0@ERIC039ERIC:~$ sudo apt install -y \
+  git git-email build-essential bc bison flex libssl-dev libelf-dev \
+  fakeroot dwarves cpio rsync curl wget perl python3 python3-pip \
+  patchutils diffstat pahole
+git is already the newest version (1:2.53.0-1ubuntu1).
+build-essential is already the newest version (12.12ubuntu2).
+bc is already the newest version (1.07.1-4build1).
+bc set to manually installed.
+fakeroot is already the newest version (1.37.2-1).
+fakeroot set to manually installed.
+rsync is already the newest version (3.4.1+ds1-7).
+rsync set to manually installed.
+curl is already the newest version (8.18.0-1ubuntu2.1).
+wget is already the newest version (1.25.0-2ubuntu4).
+perl is already the newest version (5.40.1-7build1).
+perl set to manually installed.
+python3 is already the newest version (3.14.3-0ubuntu2).
+Installing:
+  bison  diffstat  flex       libelf-dev  pahole      python3-pip
+  cpio   dwarves   git-email  libssl-dev  patchutils
+
+Installing dependencies:
+  libauthen-sasl-perl          libnet-domain-tld-perl
+  libcrypt-urandom-perl        libnet-libidn-perl
+  libdigest-bubblebabble-perl  libnet-smtp-ssl-perl
+  libdigest-hmac-perl          libnet-ssleay-perl
+  libdw1t64                    libperl4-corelibs-perl
+  libdwarves1                  libpython3-dev
+  libemail-valid-perl          libpython3.14-dev
+  libexpat1-dev                libtimedate-perl
+  libfl-dev                    libzstd-dev
+  libfl2                       m4
+  libidn12                     perl-openssl-defaults
+  libio-socket-ssl-perl        python3-dev
+  libmailtools-perl            python3-wheel
+  libnet-dns-perl              python3.14-dev
+  libnet-dns-sec-perl          zlib1g-dev
+
+Suggested packages:
+  bison-doc       flex-doc  libgssapi-perl  m4-doc
+  libarchive-dev  git-doc   libssl-doc      debhelper
+
+Summary:
+  Upgrading: 0, Installing: 41, Removing: 0, Not Upgrading: 0
+  Download size: 15.7 MB
+  Space needed: 72.4 MB / 1024 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 m4 amd64 1.4.21-1 [219 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute/main amd64 flex amd64 2.6.4-8.2build2 [300 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute/main amd64 cpio amd64 2.15+dfsg-2.1 [87.5 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute/main amd64 bison amd64 2:3.8.2+dfsg-1build4 [748 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute/main amd64 diffstat amd64 1.68-1 [30.3 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute/universe amd64 git-email all 1:2.53.0-1ubuntu1 [38.9 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/main amd64 libcrypt-urandom-perl amd64 0.55-1 [14.8 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute/main amd64 libdigest-bubblebabble-perl all 0.02-3 [6724 B]
+Get:9 http://archive.ubuntu.com/ubuntu resolute/main amd64 libdigest-hmac-perl all 1.05+dfsg-1 [8416 B]
+Get:10 http://archive.ubuntu.com/ubuntu resolute/main amd64 libdw1t64 amd64 0.194-4 [285 kB]
+Get:11 http://archive.ubuntu.com/ubuntu resolute/universe amd64 libdwarves1 amd64 1.31-2ubuntu1 [93.2 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute/main amd64 zlib1g-dev amd64 1:1.3.dfsg+really1.3.1-1ubuntu3 [895 kB]
+Get:13 http://archive.ubuntu.com/ubuntu resolute/main amd64 libzstd-dev amd64 1.5.7+dfsg-3 [376 kB]
+Get:14 http://archive.ubuntu.com/ubuntu resolute/main amd64 libelf-dev amd64 0.194-4 [116 kB]
+Get:15 http://archive.ubuntu.com/ubuntu resolute/main amd64 perl-openssl-defaults amd64 7build4 [6710 B]
+Get:16 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnet-ssleay-perl amd64 1.94-3 [318 kB]
+Get:17 http://archive.ubuntu.com/ubuntu resolute/main amd64 libio-socket-ssl-perl all 2.098-1 [205 kB]
+Get:18 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnet-smtp-ssl-perl all 1.04-2 [6218 B]
+Get:19 http://archive.ubuntu.com/ubuntu resolute/main amd64 libtimedate-perl all 2.3300-2 [34.0 kB]
+Get:20 http://archive.ubuntu.com/ubuntu resolute/main amd64 libmailtools-perl all 2.22-1 [77.1 kB]
+Get:21 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnet-dns-perl all 1.54-1ubuntu1 [342 kB]
+Get:22 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnet-domain-tld-perl all 1.75-4 [29.0 kB]
+Get:23 http://archive.ubuntu.com/ubuntu resolute/universe amd64 libemail-valid-perl all 1.204-1 [16.8 kB]
+Get:24 http://archive.ubuntu.com/ubuntu resolute/main amd64 libexpat1-dev amd64 2.7.4-1 [145 kB]
+Get:25 http://archive.ubuntu.com/ubuntu resolute/main amd64 libfl2 amd64 2.6.4-8.2build2 [9936 B]
+Get:26 http://archive.ubuntu.com/ubuntu resolute/main amd64 libfl-dev amd64 2.6.4-8.2build2 [6246 B]
+Get:27 http://archive.ubuntu.com/ubuntu resolute/main amd64 libidn12 amd64 1.43-2build1 [59.4 kB]
+Get:28 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnet-dns-sec-perl amd64 1.27-1 [40.7 kB]
+Get:29 http://archive.ubuntu.com/ubuntu resolute/main amd64 libnet-libidn-perl amd64 0.12.ds-5 [17.2 kB]
+Get:30 http://archive.ubuntu.com/ubuntu resolute/main amd64 libperl4-corelibs-perl all 0.005-1 [38.1 kB]
+Get:31 http://archive.ubuntu.com/ubuntu resolute/main amd64 libpython3.14-dev amd64 3.14.4-1 [5986 kB]
+Get:32 http://archive.ubuntu.com/ubuntu resolute/main amd64 libpython3-dev amd64 3.14.3-0ubuntu2 [8736 B]
+Get:33 http://archive.ubuntu.com/ubuntu resolute/main amd64 libssl-dev amd64 3.5.5-1ubuntu3 [2933 kB]
+Get:34 http://archive.ubuntu.com/ubuntu resolute/universe amd64 pahole amd64 1.31-2ubuntu1 [111 kB]
+Get:35 http://archive.ubuntu.com/ubuntu resolute/main amd64 patchutils amd64 0.4.3-1ubuntu1 [82.4 kB]
+Get:36 http://archive.ubuntu.com/ubuntu resolute/main amd64 python3.14-dev amd64 3.14.4-1 [510 kB]
+Get:37 http://archive.ubuntu.com/ubuntu resolute/main amd64 python3-dev amd64 3.14.3-0ubuntu2 [26.6 kB]
+Get:38 http://archive.ubuntu.com/ubuntu resolute/universe amd64 python3-wheel all 0.46.3-2 [27.9 kB]
+Get:39 http://archive.ubuntu.com/ubuntu resolute/universe amd64 python3-pip all 25.1.1+dfsg-1ubuntu2 [1416 kB]
+Get:40 http://archive.ubuntu.com/ubuntu resolute/universe amd64 dwarves all 1.31-2ubuntu1 [2152 B]
+Get:41 http://archive.ubuntu.com/ubuntu resolute/main amd64 libauthen-sasl-perl all 2.2000-1 [47.8 kB]
+Fetched 15.7 MB in 1s (11.4 MB/s)
+Extracting templates from packages: 100%
+Selecting previously unselected package m4.
+(Reading database ... 42304 files and directories currently installed.)
+Preparing to unpack .../00-m4_1.4.21-1_amd64.deb ...
+Unpacking m4 (1.4.21-1) ...
+Selecting previously unselected package flex.
+Preparing to unpack .../01-flex_2.6.4-8.2build2_amd64.deb ...
+Unpacking flex (2.6.4-8.2build2) ...
+Selecting previously unselected package cpio.
+Preparing to unpack .../02-cpio_2.15+dfsg-2.1_amd64.deb ...
+Unpacking cpio (2.15+dfsg-2.1) ...
+Selecting previously unselected package bison.
+Preparing to unpack .../03-bison_2%3a3.8.2+dfsg-1build4_amd64.deb ...
+Unpacking bison (2:3.8.2+dfsg-1build4) ...
+Selecting previously unselected package diffstat.
+Preparing to unpack .../04-diffstat_1.68-1_amd64.deb ...
+Unpacking diffstat (1.68-1) ...
+Selecting previously unselected package git-email.
+Preparing to unpack .../05-git-email_1%3a2.53.0-1ubuntu1_all.deb ...
+Unpacking git-email (1:2.53.0-1ubuntu1) ...
+Selecting previously unselected package libcrypt-urandom-perl.
+Preparing to unpack .../06-libcrypt-urandom-perl_0.55-1_amd64.deb ...
+Unpacking libcrypt-urandom-perl (0.55-1) ...
+Selecting previously unselected package libdigest-bubblebabble-perl.
+Preparing to unpack .../07-libdigest-bubblebabble-perl_0.02-3_all.deb ...
+Unpacking libdigest-bubblebabble-perl (0.02-3) ...
+Selecting previously unselected package libdigest-hmac-perl.
+Preparing to unpack .../08-libdigest-hmac-perl_1.05+dfsg-1_all.deb ...
+Unpacking libdigest-hmac-perl (1.05+dfsg-1) ...
+Selecting previously unselected package libdw1t64:amd64.
+Preparing to unpack .../09-libdw1t64_0.194-4_amd64.deb ...
+Unpacking libdw1t64:amd64 (0.194-4) ...
+Selecting previously unselected package libdwarves1:amd64.
+Preparing to unpack .../10-libdwarves1_1.31-2ubuntu1_amd64.deb ...
+Unpacking libdwarves1:amd64 (1.31-2ubuntu1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../11-zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1ubuntu3_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1ubuntu3) ...
+Selecting previously unselected package libzstd-dev:amd64.
+Preparing to unpack .../12-libzstd-dev_1.5.7+dfsg-3_amd64.deb ...
+Unpacking libzstd-dev:amd64 (1.5.7+dfsg-3) ...
+Selecting previously unselected package libelf-dev:amd64.
+Preparing to unpack .../13-libelf-dev_0.194-4_amd64.deb ...
+Unpacking libelf-dev:amd64 (0.194-4) ...
+Selecting previously unselected package perl-openssl-defaults:amd64.
+Preparing to unpack .../14-perl-openssl-defaults_7build4_amd64.deb ...
+Unpacking perl-openssl-defaults:amd64 (7build4) ...
+Selecting previously unselected package libnet-ssleay-perl:amd64.
+Preparing to unpack .../15-libnet-ssleay-perl_1.94-3_amd64.deb ...
+Unpacking libnet-ssleay-perl:amd64 (1.94-3) ...
+Selecting previously unselected package libio-socket-ssl-perl.
+Preparing to unpack .../16-libio-socket-ssl-perl_2.098-1_all.deb ...
+Unpacking libio-socket-ssl-perl (2.098-1) ...
+Selecting previously unselected package libnet-smtp-ssl-perl.
+Preparing to unpack .../17-libnet-smtp-ssl-perl_1.04-2_all.deb ...
+Unpacking libnet-smtp-ssl-perl (1.04-2) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../18-libtimedate-perl_2.3300-2_all.deb ...
+Unpacking libtimedate-perl (2.3300-2) ...
+Selecting previously unselected package libmailtools-perl.
+Preparing to unpack .../19-libmailtools-perl_2.22-1_all.deb ...
+Unpacking libmailtools-perl (2.22-1) ...
+Selecting previously unselected package libnet-dns-perl.
+Preparing to unpack .../20-libnet-dns-perl_1.54-1ubuntu1_all.deb ...
+Unpacking libnet-dns-perl (1.54-1ubuntu1) ...
+Selecting previously unselected package libnet-domain-tld-perl.
+Preparing to unpack .../21-libnet-domain-tld-perl_1.75-4_all.deb ...
+Unpacking libnet-domain-tld-perl (1.75-4) ...
+Selecting previously unselected package libemail-valid-perl.
+Preparing to unpack .../22-libemail-valid-perl_1.204-1_all.deb ...
+Unpacking libemail-valid-perl (1.204-1) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../23-libexpat1-dev_2.7.4-1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.7.4-1) ...
+Selecting previously unselected package libfl2:amd64.
+Preparing to unpack .../24-libfl2_2.6.4-8.2build2_amd64.deb ...
+Unpacking libfl2:amd64 (2.6.4-8.2build2) ...
+Selecting previously unselected package libfl-dev:amd64.
+Preparing to unpack .../25-libfl-dev_2.6.4-8.2build2_amd64.deb ...
+Unpacking libfl-dev:amd64 (2.6.4-8.2build2) ...
+Selecting previously unselected package libidn12:amd64.
+Preparing to unpack .../26-libidn12_1.43-2build1_amd64.deb ...
+Unpacking libidn12:amd64 (1.43-2build1) ...
+Selecting previously unselected package libnet-dns-sec-perl.
+Preparing to unpack .../27-libnet-dns-sec-perl_1.27-1_amd64.deb ...
+Unpacking libnet-dns-sec-perl (1.27-1) ...
+Selecting previously unselected package libnet-libidn-perl.
+Preparing to unpack .../28-libnet-libidn-perl_0.12.ds-5_amd64.deb ...
+Unpacking libnet-libidn-perl (0.12.ds-5) ...
+Selecting previously unselected package libperl4-corelibs-perl.
+Preparing to unpack .../29-libperl4-corelibs-perl_0.005-1_all.deb ...
+Unpacking libperl4-corelibs-perl (0.005-1) ...
+Selecting previously unselected package libpython3.14-dev:amd64.
+Preparing to unpack .../30-libpython3.14-dev_3.14.4-1_amd64.deb ...
+Unpacking libpython3.14-dev:amd64 (3.14.4-1) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../31-libpython3-dev_3.14.3-0ubuntu2_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.14.3-0ubuntu2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../32-libssl-dev_3.5.5-1ubuntu3_amd64.deb ...
+Unpacking libssl-dev:amd64 (3.5.5-1ubuntu3) ...
+Selecting previously unselected package pahole.
+Preparing to unpack .../33-pahole_1.31-2ubuntu1_amd64.deb ...
+Unpacking pahole (1.31-2ubuntu1) ...
+Selecting previously unselected package patchutils.
+Preparing to unpack .../34-patchutils_0.4.3-1ubuntu1_amd64.deb ...
+Unpacking patchutils (0.4.3-1ubuntu1) ...
+Selecting previously unselected package python3.14-dev.
+Preparing to unpack .../35-python3.14-dev_3.14.4-1_amd64.deb ...
+Unpacking python3.14-dev (3.14.4-1) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../36-python3-dev_3.14.3-0ubuntu2_amd64.deb ...
+Unpacking python3-dev (3.14.3-0ubuntu2) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../37-python3-wheel_0.46.3-2_all.deb ...
+Unpacking python3-wheel (0.46.3-2) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../38-python3-pip_25.1.1+dfsg-1ubuntu2_all.deb ...
+Unpacking python3-pip (25.1.1+dfsg-1ubuntu2) ...
+Selecting previously unselected package dwarves.
+Preparing to unpack .../39-dwarves_1.31-2ubuntu1_all.deb ...
+Unpacking dwarves (1.31-2ubuntu1) ...
+Selecting previously unselected package libauthen-sasl-perl.
+Preparing to unpack .../40-libauthen-sasl-perl_2.2000-1_all.deb ...
+Unpacking libauthen-sasl-perl (2.2000-1) ...
+Setting up cpio (2.15+dfsg-2.1) ...
+update-alternatives: using /usr/bin/mt-gnu to provide /usr/bin/mt (mt) in auto mode
+Setting up libzstd-dev:amd64 (1.5.7+dfsg-3) ...
+Setting up libperl4-corelibs-perl (0.005-1) ...
+Setting up libcrypt-urandom-perl (0.55-1) ...
+Setting up perl-openssl-defaults:amd64 (7build4) ...
+Setting up m4 (1.4.21-1) ...
+Setting up python3-wheel (0.46.3-2) ...
+Setting up libdw1t64:amd64 (0.194-4) ...
+Setting up patchutils (0.4.3-1ubuntu1) ...
+Setting up libexpat1-dev:amd64 (2.7.4-1) ...
+Setting up libdigest-hmac-perl (1.05+dfsg-1) ...
+Setting up libnet-domain-tld-perl (1.75-4) ...
+Setting up diffstat (1.68-1) ...
+Setting up libssl-dev:amd64 (3.5.5-1ubuntu3) ...
+Setting up libidn12:amd64 (1.43-2build1) ...
+Setting up libfl2:amd64 (2.6.4-8.2build2) ...
+Setting up python3-pip (25.1.1+dfsg-1ubuntu2) ...
+Setting up libtimedate-perl (2.3300-2) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1ubuntu3) ...
+Setting up git-email (1:2.53.0-1ubuntu1) ...
+Setting up bison (2:3.8.2+dfsg-1build4) ...
+update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+Setting up libpython3.14-dev:amd64 (3.14.4-1) ...
+Setting up libdigest-bubblebabble-perl (0.02-3) ...
+Setting up libnet-ssleay-perl:amd64 (1.94-3) ...
+Setting up flex (2.6.4-8.2build2) ...
+Setting up libdwarves1:amd64 (1.31-2ubuntu1) ...
+Setting up libpython3-dev:amd64 (3.14.3-0ubuntu2) ...
+Setting up python3.14-dev (3.14.4-1) ...
+Setting up libauthen-sasl-perl (2.2000-1) ...
+Setting up libnet-dns-perl (1.54-1ubuntu1) ...
+Setting up libfl-dev:amd64 (2.6.4-8.2build2) ...
+Setting up python3-dev (3.14.3-0ubuntu2) ...
+Setting up libnet-libidn-perl (0.12.ds-5) ...
+Setting up libelf-dev:amd64 (0.194-4) ...
+Setting up pahole (1.31-2ubuntu1) ...
+Setting up libio-socket-ssl-perl (2.098-1) ...
+Setting up libnet-dns-sec-perl (1.27-1) ...
+Setting up libnet-smtp-ssl-perl (1.04-2) ...
+Setting up libmailtools-perl (2.22-1) ...
+Setting up dwarves (1.31-2ubuntu1) ...
+Setting up libemail-valid-perl (1.204-1) ...
+Processing triggers for man-db (2.13.1-1build1) ...
+Processing triggers for install-info (7.2-5ubuntu2) ...
+Processing triggers for libc-bin (2.43-2ubuntu2) ...
+eric0@ERIC039ERIC:~$ git config --global user.name "Chen-Shi-Hong"
+eric0@ERIC039ERIC:~$ git config --global user.email "eric039eric@gmail.com"
+eric0@ERIC039ERIC:~$ git config --global core.editor "nano"
+eric0@ERIC039ERIC:~$ git config --global sendemail.annotate yes
+eric0@ERIC039ERIC:~$ git config --global format.subjectPrefix "PATCH"
+eric0@ERIC039ERIC:~$ git config --global --list
+user.name=Chen-Shi-Hong
+user.email=eric039eric@gmail.com
+core.editor=nano
+sendemail.annotate=yes
+format.subjectprefix=PATCH
+eric0@ERIC039ERIC:~$ mkdir -p ~/src
+eric0@ERIC039ERIC:~$ cd src
+eric0@ERIC039ERIC:~/src$ ls
+eric0@ERIC039ERIC:~/src$ git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+Cloning into 'linux'...
+remote: Enumerating objects: 11545136, done.
+remote: Counting objects: 100% (105/105), done.
+remote: Compressing objects: 100% (89/89), done.
+remote: Total 11545136 (delta 50), reused 29 (delta 16), pack-reused 11545031 (from 1)
+Receiving objects: 100% (11545136/11545136), 3.22 GiB | 23.03 MiB/s, done.
+Resolving deltas: 100% (9492249/9492249), done.
+Updating files: 100% (93697/93697), done.
+eric0@ERIC039ERIC:~/src$ ls
+linux
+eric0@ERIC039ERIC:~/src$ cd linux
+eric0@ERIC039ERIC:~/src/linux$ ls -a
+.                       .gitignore     LICENSES     fs        rust
+..                      .mailmap       MAINTAINERS  include   samples
+.clang-format           .pylintrc      Makefile     init      scripts
+.clippy.toml            .rustfmt.toml  README       io_uring  security
+.cocciconfig            COPYING        arch         ipc       sound
+.editorconfig           CREDITS        block        kernel    tools
+.get_maintainer.ignore  Documentation  certs        lib       usr
+.git                    Kbuild         crypto       mm        virt
+.gitattributes          Kconfig        drivers      net
+eric0@ERIC039ERIC:~/src/linux$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+none            7.8G     0  7.8G   0% /usr/lib/modules/6.6.114.1-microsoft-standard-WSL2
+none            7.8G  4.0K  7.8G   1% /mnt/wsl
+drivers         238G  105G  134G  44% /usr/lib/wsl/drivers
+/dev/sdd       1007G  7.3G  949G   1% /
+none            7.8G   36K  7.8G   1% /mnt/wslg
+none            7.8G     0  7.8G   0% /usr/lib/wsl/lib
+rootfs          7.8G  2.8M  7.8G   1% /init
+none            7.8G  572K  7.8G   1% /run
+none            7.8G     0  7.8G   0% /run/lock
+none            7.8G     0  7.8G   0% /run/shm
+none            7.8G   80K  7.8G   1% /mnt/wslg/versions.txt
+none            7.8G   80K  7.8G   1% /mnt/wslg/doc
+C:\             238G  105G  134G  44% /mnt/c
+D:\             238G   73G  166G  31% /mnt/d
+E:\             1.9T  418G  1.5T  23% /mnt/e
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.8G     0  7.8G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.6G   12K  1.6G   1% /run/user/1000
+eric0@ERIC039ERIC:~/src/linux$ git branch
+* master
+eric0@ERIC039ERIC:~/src/linux$ git log --online -n 5
+fatal: unrecognized argument: --online
+eric0@ERIC039ERIC:~/src/linux$ git log --oneline -n 5
+5d6919055dec (HEAD -> master, tag: v7.1-rc3, origin/master, origin/HEAD) Linux 7.1-rc3
+afaa0a477099 Merge tag 'edac_urgent_for_v7.1_rc3' of git://git.kernel.org/pub/scm/linux/kernel/git/ras/ras
+aa54b1d27fe0 rxrpc: Also unshare DATA/RESPONSE packets when paged frags are present
+a1a10cdbc655 Merge tag 'clk-fixes-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/clk/linux
+515186b7be48 Merge tag 'bpf-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf
+eric0@ERIC039ERIC:~/src/linux$ git checkout -b shihong-first-doc-patch
+Switched to a new branch 'shihong-first-doc-patch'
+eric0@ERIC039ERIC:~/src/linux$ less README
+
+
+
+
+
+
+
+
+[1]+  Stopped                    less README
+eric0@ERIC039ERIC:~/src/linux$ less Documentation/process/howto.rst
+
+[2]+  Stopped                    less Documentation/process/howto.rst
+eric0@ERIC039ERIC:~/src/linux$ uname -a
+Linux ERIC039ERIC 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux
+eric0@ERIC039ERIC:~/src/linux$ git --version
+git version 2.53.0
+eric0@ERIC039ERIC:~/src/linux$ git send-email --verison
+fatal: unrecognized argument: --verison
+format-patch -o /tmp/VikFUAjKDz --verison: command returned error: 128
+eric0@ERIC039ERIC:~/src/linux$ git send-email --version
+fatal: unrecognized argument: --version
+format-patch -o /tmp/FzcRyXqwNd --version: command returned error: 128
+eric0@ERIC039ERIC:~/src/linux$ git send-email --version
+fatal: unrecognized argument: --version
+format-patch -o /tmp/cg5WioudSv --version: command returned error: 128
+eric0@ERIC039ERIC:~/src/linux$ which git
+/usr/bin/git
+eric0@ERIC039ERIC:~/src/linux$ git send-email -h | head -n 20
+git send-email [<options>] <file|directory>
+git send-email [<options>] <format-patch options>
+git send-email --dump-aliases
+git send-email --translate-aliases
+
+  Composing:
+    --from                  <str>  * Email From:
+    --[no-]to               <str>  * Email To:
+    --[no-]cc               <str>  * Email Cc:
+    --[no-]bcc              <str>  * Email Bcc:
+    --subject               <str>  * Email "Subject:"
+    --reply-to              <str>  * Email "Reply-To:"
+    --in-reply-to           <str>  * Email "In-Reply-To:"
+    --[no-]outlook-id-fix          * The SMTP host is an Outlook server that munges the
+                                     Message-ID. Retrieve it from the server.
+    --[no-]xmailer                 * Add "X-Mailer:" header (default).
+    --[no-]annotate                * Review each patch that will be sent in an editor.
+    --compose                      * Open an editor for introduction.
+    --compose-encoding      <str>  * Encoding to assume for introduction.
+    --8bit-encoding         <str>  * Encoding to assume 8bit mails if undeclared
+eric0@ERIC039ERIC:~/src/linux$ dpkg -l | grep git -email
+grep: git: No such file or directory
+eric0@ERIC039ERIC:~/src/linux$ dpkg -l | grep git-email
+ii  git-email                         1:2.53.0-1ubuntu1                          all          fast, scalable, distributed revision control system (email add-on)
+eric0@ERIC039ERIC:~/src/linux$ pwd
+/home/eric0/src/linux
+eric0@ERIC039ERIC:~/src/linux$ git status
+On branch shihong-first-doc-patch
+nothing to commit, working tree clean
+eric0@ERIC039ERIC:~/src/linux$ git branch --show-current
+shihong-first-doc-patch
+eric0@ERIC039ERIC:~/src/linux$ ls Documentation/process | head
+1.Intro.rst
+2.Process.rst
+3.Early-stage.rst
+4.Coding.rst
+5.Posting.rst
+6.Followthrough.rst
+7.AdvancedTopics.rst
+8.Conclusion.rst
+adding-syscalls.rst
+applying-patches.rst
+eric0@ERIC039ERIC:~/src/linux$ grep -n "kernel developer" Documentation/process/howto.rst | head -n 10
+7:instructions on how to become a Linux kernel developer and how to learn
+20:So, you want to learn how to become a Linux kernel developer?  Or you
+346:what kind of information is needed by the kernel developers to help track
+548:Here is an analogy from kernel developer Al Viro:
+eric0@ERIC039ERIC:~/src/linux$ grep -n "git send-email" Documentation/process/submitting-patches.rst | head -n 10
+287:easiest way to do this is with ``git send-email``, which is strongly
+288:recommended.  An interactive tutorial for ``git send-email`` is available at
+291:If you choose not to use ``git send-email``:
+393:``git send-email`` will do this for you automatically.
+843:(e.g., when using ``git send-email``) to associate the patch with
+eric0@ERIC039ERIC:~/src/linux$ grep -n "MAINTAINERS" Documentation/process/maintainers.rst | head -n 10
+eric0@ERIC039ERIC:~/src/linux$ sed -n '1,120p' Documentation/process/howto.rst
+.. _process_howto:
+
+HOWTO do Linux kernel development
+=================================
+
+This is the be-all, end-all document on this topic.  It contains
+instructions on how to become a Linux kernel developer and how to learn
+to work with the Linux kernel development community.  It tries to not
+contain anything related to the technical aspects of kernel programming,
+but will help point you in the right direction for that.
+
+If anything in this document becomes out of date, please send in patches
+to the maintainer of this file, who is listed at the bottom of the
+document.
+
+
+Introduction
+------------
+
+So, you want to learn how to become a Linux kernel developer?  Or you
+have been told by your manager, "Go write a Linux driver for this
+device."  This document's goal is to teach you everything you need to
+know to achieve this by describing the process you need to go through,
+and hints on how to work with the community.  It will also try to
+explain some of the reasons why the community works like it does.
+
+The kernel is written mostly in C, with some architecture-dependent
+parts written in assembly. A good understanding of C is required for
+kernel development.  Assembly (any architecture) is not required unless
+you plan to do low-level development for that architecture.  Though they
+are not a good substitute for a solid C education and/or years of
+experience, the following books are good for, if anything, reference:
+
+ - "The C Programming Language" by Kernighan and Ritchie [Prentice Hall]
+ - "Practical C Programming" by Steve Oualline [O'Reilly]
+ - "C:  A Reference Manual" by Harbison and Steele [Prentice Hall]
+
+The kernel is written using GNU C and the GNU toolchain.  While it
+adheres to the ISO C11 standard, it uses a number of extensions that are
+not featured in the standard.  The kernel is a freestanding C
+environment, with no reliance on the standard C library, so some
+portions of the C standard are not supported.  Arbitrary long long
+divisions and floating point are not allowed.  It can sometimes be
+difficult to understand the assumptions the kernel has on the toolchain
+and the extensions that it uses, and unfortunately there is no
+definitive reference for them.  Please check the gcc info pages (`info
+gcc`) for some information on them.
+
+Please remember that you are trying to learn how to work with the
+existing development community.  It is a diverse group of people, with
+high standards for coding, style and procedure.  These standards have
+been created over time based on what they have found to work best for
+such a large and geographically dispersed team.  Try to learn as much as
+possible about these standards ahead of time, as they are well
+documented; do not expect people to adapt to you or your company's way
+of doing things.
+
+
+Legal Issues
+------------
+
+The Linux kernel source code is released under the GPL.  Please see the file
+COPYING in the main directory of the source tree. The Linux kernel licensing
+rules and how to use `SPDX <https://spdx.org/>`_ identifiers in source code are
+described in :ref:`Documentation/process/license-rules.rst <kernel_licensing>`.
+If you have further questions about the license, please contact a lawyer, and do
+not ask on the Linux kernel mailing list.  The people on the mailing lists are
+not lawyers, and you should not rely on their statements on legal matters.
+
+For common questions and answers about the GPL, please see:
+
+        https://www.gnu.org/licenses/gpl-faq.html
+
+
+Documentation
+-------------
+
+The Linux kernel source tree has a large range of documents that are
+invaluable for learning how to interact with the kernel community.  When
+new features are added to the kernel, it is recommended that new
+documentation files are also added which explain how to use the feature.
+When a kernel change causes the interface that the kernel exposes to
+userspace to change, it is recommended that you send the information or
+a patch to the manual pages explaining the change to the manual pages
+maintainer at alx@kernel.org, and CC the list linux-api@vger.kernel.org.
+
+Here is a list of files that are in the kernel source tree that are
+required reading:
+
+  :ref:`Documentation/admin-guide/README.rst <readme>`
+    This file gives a short background on the Linux kernel and describes
+    what is necessary to do to configure and build the kernel.  People
+    who are new to the kernel should start here.
+
+  :ref:`Documentation/process/changes.rst <changes>`
+    This file gives a list of the minimum levels of various software
+    packages that are necessary to build and run the kernel
+    successfully.
+
+  :ref:`Documentation/process/coding-style.rst <codingstyle>`
+    This describes the Linux kernel coding style, and some of the
+    rationale behind it. All new code is expected to follow the
+    guidelines in this document. Most maintainers will only accept
+    patches if these rules are followed, and many people will only
+    review code if it is in the proper style.
+
+  :ref:`Documentation/process/submitting-patches.rst <submittingpatches>`
+    This file describes in explicit detail how to successfully create
+    and send a patch, including (but not limited to):
+
+       - Email contents
+       - Email format
+       - Who to send it to
+
+    Following these rules will not guarantee success (as all patches are
+    subject to scrutiny for content and style), but not following them
+    will almost always prevent it.
+
+    Other excellent descriptions of how to create patches properly are:
+
+eric0@ERIC039ERIC:~/src/linux$ sed -n '1,160p' Documentation/process/submitting-patches.rst
+sed -n '1,120p' Documentation/process/maintainers.rst
+.. _submittingpatches:
+
+Submitting patches: the essential guide to getting your code into the kernel
+============================================================================
+
+For a person or company who wishes to submit a change to the Linux
+kernel, the process can sometimes be daunting if you're not familiar
+with "the system."  This text is a collection of suggestions which
+can greatly increase the chances of your change being accepted.
+
+This document contains a large number of suggestions in a relatively terse
+format.  For detailed information on how the kernel development process
+works, see Documentation/process/development-process.rst. Also, read
+Documentation/process/submit-checklist.rst
+for a list of items to check before submitting code.
+For device tree binding patches, read
+Documentation/devicetree/bindings/submitting-patches.rst.
+
+This documentation assumes that you're using ``git`` to prepare your patches.
+If you're unfamiliar with ``git``, you would be well-advised to learn how to
+use it, it will make your life as a kernel developer and in general much
+easier.
+
+Some subsystems and maintainer trees have additional information about
+their workflow and expectations, see
+Documentation/process/maintainer-handbooks.rst.
+
+Obtain a current source tree
+----------------------------
+
+If you do not have a repository with the current kernel source handy, use
+``git`` to obtain one.  You'll want to start with the mainline repository,
+which can be grabbed with::
+
+  git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+
+Note, however, that you may not want to develop against the mainline tree
+directly.  Most subsystem maintainers run their own trees and want to see
+patches prepared against those trees.  See the **T:** entry for the subsystem
+in the MAINTAINERS file to find that tree, or simply ask the maintainer if
+the tree is not listed there.
+
+.. _describe_changes:
+
+Describe your changes
+---------------------
+
+Describe your problem.  Whether your patch is a one-line bug fix or
+5000 lines of a new feature, there must be an underlying problem that
+motivated you to do this work.  Convince the reviewer that there is a
+problem worth fixing and that it makes sense for them to read past the
+first paragraph.
+
+Describe user-visible impact.  Straight up crashes and lockups are
+pretty convincing, but not all bugs are that blatant.  Even if the
+problem was spotted during code review, describe the impact you think
+it can have on users.  Keep in mind that the majority of Linux
+installations run kernels from secondary stable trees or
+vendor/product-specific trees that cherry-pick only specific patches
+from upstream, so include anything that could help route your change
+downstream: provoking circumstances, excerpts from dmesg, crash
+descriptions, performance regressions, latency spikes, lockups, etc.
+
+Quantify optimizations and trade-offs.  If you claim improvements in
+performance, memory consumption, stack footprint, or binary size,
+include numbers that back them up.  But also describe non-obvious
+costs.  Optimizations usually aren't free but trade-offs between CPU,
+memory, and readability; or, when it comes to heuristics, between
+different workloads.  Describe the expected downsides of your
+optimization so that the reviewer can weigh costs against benefits.
+
+Once the problem is established, describe what you are actually doing
+about it in technical detail.  It's important to describe the change
+in plain English for the reviewer to verify that the code is behaving
+as you intend it to.
+
+The maintainer will thank you if you write your patch description in a
+form which can be easily pulled into Linux's source code management
+system, ``git``, as a "commit log".  See :ref:`the_canonical_patch_format`.
+
+Solve only one problem per patch.  If your description starts to get
+long, that's a sign that you probably need to split up your patch.
+See :ref:`split_changes`.
+
+When you submit or resubmit a patch or patch series, include the
+complete patch description and justification for it.  Don't just
+say that this is version N of the patch (series).  Don't expect the
+subsystem maintainer to refer back to earlier patch versions or referenced
+URLs to find the patch description and put that into the patch.
+I.e., the patch (series) and its description should be self-contained.
+This benefits both the maintainers and reviewers.  Some reviewers
+probably didn't even receive earlier versions of the patch.
+
+Describe your changes in imperative mood, e.g. "make xyzzy do frotz"
+instead of "[This patch] makes xyzzy do frotz" or "[I] changed xyzzy
+to do frotz", as if you are giving orders to the codebase to change
+its behaviour.
+
+If you want to refer to a specific commit, don't just refer to the
+SHA-1 ID of the commit. Please also include the oneline summary of
+the commit, to make it easier for reviewers to know what it is about.
+Example::
+
+        Commit e21d2170f36602ae2708 ("video: remove unnecessary
+        platform_set_drvdata()") removed the unnecessary
+        platform_set_drvdata(), but left the variable "dev" unused,
+        delete it.
+
+You should also be sure to use at least the first twelve characters of the
+SHA-1 ID.  The kernel repository holds a *lot* of objects, making
+collisions with shorter IDs a real possibility.  Bear in mind that, even if
+there is no collision with your six-character ID now, that condition may
+change five years from now.
+
+If related discussions or any other background information behind the change
+can be found on the web, add 'Link:' tags pointing to it. If the patch is a
+result of some earlier mailing list discussions or something documented on the
+web, point to it.
+
+When linking to mailing list archives, preferably use the lore.kernel.org
+message archiver service. To create the link URL, use the contents of the
+``Message-ID`` header of the message without the surrounding angle brackets.
+For example::
+
+    Link: https://lore.kernel.org/30th.anniversary.repost@klaava.Helsinki.FI
+
+Please check the link to make sure that it is actually working and points
+to the relevant message.
+
+However, try to make your explanation understandable without external
+resources. In addition to giving a URL to a mailing list archive or bug,
+summarize the relevant points of the discussion that led to the
+patch as submitted.
+
+In case your patch fixes a bug, use the 'Closes:' tag with a URL referencing
+the report in the mailing list archives or a public bug tracker. For example::
+
+        Closes: https://example.com/issues/1234
+
+Some bug trackers have the ability to close issues automatically when a
+commit with such a tag is applied. Some bots monitoring mailing lists can
+also track such tags and take certain actions. Private bug trackers and
+invalid URLs are forbidden.
+
+If your patch fixes a bug in a specific commit, e.g. you found an issue using
+``git bisect``, please use the 'Fixes:' tag with at least the first 12
+characters of the SHA-1 ID, and the one line summary.  Do not split the tag
+across multiple lines, tags are exempt from the "wrap at 75 columns" rule in
+order to simplify parsing scripts.  For example::
+
+        Fixes: 54a4f0239f2e ("KVM: MMU: make kvm_mmu_zap_page() return the number of pages it actually freed")
+
+The following ``git config`` settings can be used to add a pretty format for
+outputting the above style in the ``git log`` or ``git show`` commands::
+
+        [core]
+                abbrev = 12
+        [pretty]
+                fixes = Fixes: %h (\"%s\")
+
+.. maintainers-include::
+eric0@ERIC039ERIC:~/src/linux$ sudo apt update
+[sudo: authenticate] Password:
+Hit:1 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+All packages are up to date.
+eric0@ERIC039ERIC:~/src/linux$ sudo apt install -y codespell
+Installing:
+  codespell
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 0
+  Download size: 300 kB
+  Space needed: 1679 kB / 1018 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu resolute/universe amd64 codespell all 2.4.1-1build1 [300 kB]
+Fetched 300 kB in 1s (377 kB/s)
+Selecting previously unselected package codespell.
+(Reading database ... 44759 files and directories currently installed.)
+Preparing to unpack .../codespell_2.4.1-1build1_all.deb ...
+Unpacking codespell (2.4.1-1build1) ...
+Setting up codespell (2.4.1-1build1) ...
+Processing triggers for man-db (2.13.1-1build1) ...
+eric0@ERIC039ERIC:~/src/linux$ codespell Documentation/process/howto.rst \
+> ^C
+eric0@ERIC039ERIC:~/src/linux$ codespell Documentation/process/howto.rst \
+          Documentation/process/submitting-patches.rst \
+          Documentation/process/maintainers.rst
+Documentation/process/howto.rst:619: Shepard ==> Shepherd
+eric0@ERIC039ERIC:~/src/linux$ ./scripts/checkpatch.pl --strict --codespell --file
+^C
+eric0@ERIC039ERIC:~/src/linux$ codespell Documentation/process/howto.rst \
+          Documentation/process/submitting-patches.rst \
+          Documentation/process/maintainers.rst
+
+./scripts/checkpatch.pl --strict --codespell --file Documentation/process/howto.rst
+./scripts/checkpatch.pl --strict --codespell --file Documentation/process/submitting-patches.rst
+./scripts/checkpatch.pl --strict --codespell --file Documentation/process/maintainers.rst
+Documentation/process/howto.rst:619: Shepard ==> Shepherd
+WARNING: Missing or malformed SPDX-License-Identifier tag in line 1
+#1: FILE: Documentation/process/howto.rst:1:
++.. _process_howto:
+
+CHECK: 'Shepard' may be misspelled - perhaps 'Shepherd'?
+#619: FILE: Documentation/process/howto.rst:619:
++David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepard for
+                                                           ^^^^^^^
+
+total: 0 errors, 1 warnings, 1 checks, 625 lines checked
+
+NOTE: For some of the reported defects, checkpatch may be able to
+      mechanically convert to the typical style using --fix or --fix-inplace.
+
+Documentation/process/howto.rst has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.
+WARNING: Missing or malformed SPDX-License-Identifier tag in line 1
+#1: FILE: Documentation/process/submitting-patches.rst:1:
++.. _submittingpatches:
+
+CHECK: 'acknowledgement' may be misspelled - perhaps 'acknowledgment'?
+#489: FILE: Documentation/process/submitting-patches.rst:489:
++Acked-by: does not necessarily indicate acknowledgement of the entire patch.
+                                         ^^^^^^^^^^^^^^^
+
+CHECK: 'acknowledgement' may be misspelled - perhaps 'acknowledgment'?
+#491: FILE: Documentation/process/submitting-patches.rst:491:
++one subsystem maintainer then this usually indicates acknowledgement of just
+                                                      ^^^^^^^^^^^^^^^
+
+total: 0 errors, 1 warnings, 2 checks, 949 lines checked
+
+NOTE: For some of the reported defects, checkpatch may be able to
+      mechanically convert to the typical style using --fix or --fix-inplace.
+
+Documentation/process/submitting-patches.rst has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.
+WARNING: Missing or malformed SPDX-License-Identifier tag in line 1
+#1: FILE: Documentation/process/maintainers.rst:1:
++.. maintainers-include::
+
+total: 0 errors, 1 warnings, 0 checks, 1 lines checked
+
+NOTE: For some of the reported defects, checkpatch may be able to
+      mechanically convert to the typical style using --fix or --fix-inplace.
+
+Documentation/process/maintainers.rst has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.
+eric0@ERIC039ERIC:~/src/linux$ sed -n '1,120p' Documentation/process/maintainers.rst
+.. maintainers-include::
+eric0@ERIC039ERIC:~/src/linux$ sed -n '610,625p' Documentation/process/howto.rst
+----------
+
+Thanks to Paolo Ciarrocchi who allowed the "Development Process"
+(https://lwn.net/Articles/94386/) section
+to be based on text he had written, and to Randy Dunlap and Gerrit
+Huizenga for some of the list of things you should and should not say.
+Also thanks to Pat Mochel, Hanna Linder, Randy Dunlap, Kay Sievers,
+Vojtech Pavlik, Jan Kara, Josh Boyer, Kees Cook, Andrew Morton, Andi
+Kleen, Vadim Lobanov, Jesper Juhl, Adrian Bunk, Keri Harris, Frans Pop,
+David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepard for
+their review, comments, and contributions.  Without their help, this
+document would not have been possible.
+
+
+
+Maintainer: Greg Kroah-Hartman <greg@kroah.com>
+eric0@ERIC039ERIC:~/src/linux$ nano +619 Documentation/process/howto.rst
+eric0@ERIC039ERIC:~/src/linux$ git diff -- Documentation/process/howto.rst
+diff --git a/Documentation/process/howto.rst b/Documentation/process/howto.rst
+index 9438e03d6f50..edf4412de112 100644
+--- a/Documentation/process/howto.rst
++++ b/Documentation/process/howto.rst
+@@ -616,7 +616,7 @@ Huizenga for some of the list of things you should and should not say.
+ Also thanks to Pat Mochel, Hanna Linder, Randy Dunlap, Kay Sievers,
+ Vojtech Pavlik, Jan Kara, Josh Boyer, Kees Cook, Andrew Morton, Andi
+ Kleen, Vadim Lobanov, Jesper Juhl, Adrian Bunk, Keri Harris, Frans Pop,
+-David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepard for
++David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepherd for
+ their review, comments, and contributions.  Without their help, this
+ document would not have been possible.
+
+eric0@ERIC039ERIC:~/src/linux$ codespell Documentation/process/howto.rst
+./scripts/checkpatch.pl --strict --codespell --file Documentation/process/howto.rst
+WARNING: Missing or malformed SPDX-License-Identifier tag in line 1
+#1: FILE: Documentation/process/howto.rst:1:
++.. _process_howto:
+
+total: 0 errors, 1 warnings, 0 checks, 625 lines checked
+
+NOTE: For some of the reported defects, checkpatch may be able to
+      mechanically convert to the typical style using --fix or --fix-inplace.
+
+Documentation/process/howto.rst has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.
+eric0@ERIC039ERIC:~/src/linux$ git add Documentation/process/howto.rst
+eric0@ERIC039ERIC:~/src/linux$ git status
+On branch shihong-first-doc-patch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Documentation/process/howto.rst
+
+eric0@ERIC039ERIC:~/src/linux$ git diff --cached
+diff --git a/Documentation/process/howto.rst b/Documentation/process/howto.rst
+index 9438e03d6f50..edf4412de112 100644
+--- a/Documentation/process/howto.rst
++++ b/Documentation/process/howto.rst
+@@ -616,7 +616,7 @@ Huizenga for some of the list of things you should and should not say.
+ Also thanks to Pat Mochel, Hanna Linder, Randy Dunlap, Kay Sievers,
+ Vojtech Pavlik, Jan Kara, Josh Boyer, Kees Cook, Andrew Morton, Andi
+ Kleen, Vadim Lobanov, Jesper Juhl, Adrian Bunk, Keri Harris, Frans Pop,
+-David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepard for
++David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepherd for
+ their review, comments, and contributions.  Without their help, this
+ document would not have been possible.
+
+eric0@ERIC039ERIC:~/src/linux$ git commit -s
+[shihong-first-doc-patch bfcbd2ed4ce9] docs: fix spelling of Shepherd in howto
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+eric0@ERIC039ERIC:~/src/linux$ git log --oneline -n 3
+bfcbd2ed4ce9 (HEAD -> shihong-first-doc-patch) docs: fix spelling of Shepherd in howto
+5d6919055dec (tag: v7.1-rc3, origin/master, origin/HEAD, master) Linux 7.1-rc3
+afaa0a477099 Merge tag 'edac_urgent_for_v7.1_rc3' of git://git.kernel.org/pub/scm/linux/kernel/git/ras/ras
+eric0@ERIC039ERIC:~/src/linux$ mkdir -p ~/patches
+eric0@ERIC039ERIC:~/src/linux$ git format-patch -1 -o ~/patches --base=auto
+fatal: failed to get upstream, if you want to record base commit automatically,
+please use git branch --set-upstream-to to track a remote branch.
+Or you could specify base commit by --base=<base-commit-id> manually
+eric0@ERIC039ERIC:~/src/linux$ ls ~/patches/
+eric0@ERIC039ERIC:~/src/linux$ git format-patch -1 -o ~/patches --base=auto
+fatal: failed to get upstream, if you want to record base commit automatically,
+please use git branch --set-upstream-to to track a remote branch.
+Or you could specify base commit by --base=<base-commit-id> manually
+eric0@ERIC039ERIC:~/src/linux$ git format-patch -1 -o ~/patches
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+eric0@ERIC039ERIC:~/src/linux$ ls ~/patches/
+0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+eric0@ERIC039ERIC:~/src/linux$ git branch --set-upstream-to=origin/master sh
+ihong-first-doc-patch
+branch 'shihong-first-doc-patch' set up to track 'origin/master'.
+eric0@ERIC039ERIC:~/src/linux$ git format-patch -1 -o ~/patches --base=auto
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+eric0@ERIC039ERIC:~/src/linux$ ls ~/patches/
+0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+eric0@ERIC039ERIC:~/src/linux$ less ~/patches/0001-*.patch
+
+[3]+  Stopped                    less ~/patches/0001-*.patch
+eric0@ERIC039ERIC:~/src/linux$ ./scripts/get_maintainer.pl ~/patches/0001-*.patch
+Jonathan Corbet <corbet@lwn.net> (maintainer:DOCUMENTATION PROCESS)
+Shuah Khan <skhan@linuxfoundation.org> (reviewer:DOCUMENTATION PROCESS)
+workflows@vger.kernel.org (open list:DOCUMENTATION PROCESS)
+linux-doc@vger.kernel.org (open list:DOCUMENTATION)
+linux-kernel@vger.kernel.org (open list)
+eric0@ERIC039ERIC:~/src/linux$ sed -n '1,80p' ~/patches/0001-*.patch
+From bfcbd2ed4ce994b1731101cce798378ecdac6acd Mon Sep 17 00:00:00 2001
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+Date: Tue, 12 May 2026 07:24:12 +0800
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+
+Correct the spelling of "Shepherd" in the acknowledgements section of
+Documentation/process/howto.rst.
+
+Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>
+---
+ Documentation/process/howto.rst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Documentation/process/howto.rst b/Documentation/process/howto.rst
+index 9438e03d6f50..edf4412de112 100644
+--- a/Documentation/process/howto.rst
++++ b/Documentation/process/howto.rst
+@@ -616,7 +616,7 @@ Huizenga for some of the list of things you should and should not say.
+ Also thanks to Pat Mochel, Hanna Linder, Randy Dunlap, Kay Sievers,
+ Vojtech Pavlik, Jan Kara, Josh Boyer, Kees Cook, Andrew Morton, Andi
+ Kleen, Vadim Lobanov, Jesper Juhl, Adrian Bunk, Keri Harris, Frans Pop,
+-David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepard for
++David A. Wheeler, Junio Hamano, Michael Kerrisk, and Alex Shepherd for
+ their review, comments, and contributions.  Without their help, this
+ document would not have been possible.
+
+
+base-commit: 5d6919055dec134de3c40167a490f33c74c12581
+--
+2.53.0
+
+eric0@ERIC039ERIC:~/src/linux$ git config --global sendemail.smtpserver smtp.gmail.com
+eric0@ERIC039ERIC:~/src/linux$ git config --global sendemail.smtpserverport 587
+git config --global sendemail.smtpencryption tls
+git config --global sendemail.smtpuser eric039eric@gmail.com
+git config --global sendemail.from "Chen-Shi-Hong <eric039eric@gmail.com>"
+eric0@ERIC039ERIC:~/src/linux$ git send-email --dry-run --to eric039eric@gmail.com ~/patches/0001-*.patch
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+(mbox) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'From: Chen-Shi-Hong <eric039eric@gmail.com>'
+(body) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>'
+Dry-OK. Log says:
+Server: smtp.gmail.com
+MAIL FROM:<eric039eric@gmail.com>
+RCPT TO:<eric039eric@gmail.com>
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: eric039eric@gmail.com
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 07:41:36 +0800
+Message-ID: <20260511234206.2842-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Result: OK
+eric0@ERIC039ERIC:~/src/linux$ git send-email --to eric039eric@gmail.com ~/patches/0001-*.patch
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+(mbox) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'From: Chen-Shi-Hong <eric039eric@gmail.com>'
+(body) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>'
+
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: eric039eric@gmail.com
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 07:42:30 +0800
+Message-ID: <20260511234238.2866-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+    The Cc list above has been expanded by additional
+    addresses found in the patch commit message. By default
+    send-email prompts before sending whenever this occurs.
+    This behavior is controlled by the sendemail.confirm
+    configuration setting.
+
+    For additional information, run 'git send-email --help'.
+    To retain the current behavior, but squelch this message,
+    run 'git config --global sendemail.confirm auto'.
+
+Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
+Password for 'smtp://eric039eric%40gmail.com@smtp.gmail.com:587':
+5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-83967dbd995sm20017976b3a.43 - gsmtp
+eric0@ERIC039ERIC:~/src/linux$ git config --global sendemail.confirm auto
+eric0@ERIC039ERIC:~/src/linux$ git config --global sendemail.smtpserver smtp.gmail.com
+git config --global sendemail.smtpserverport 587
+git config --global sendemail.smtpencryption tls
+git config --global sendemail.smtpuser eric039eric@gmail.com
+git config --global sendemail.from "Chen-Shi-Hong <eric039eric@gmail.com>"
+eric0@ERIC039ERIC:~/src/linux$ git send-email --to eric039eric@gmail.com ~/patches/0001-*.patch
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+(mbox) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'From: Chen-Shi-Hong <eric039eric@gmail.com>'
+(body) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>'
+
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: eric039eric@gmail.com
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 07:51:29 +0800
+Message-ID: <20260511235133.2942-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
+Password for 'smtp://eric039eric%40gmail.com@smtp.gmail.com:587':
+5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-368b9afd07csm59053a91.6 - gsmtp
+eric0@ERIC039ERIC:~/src/linux$ git config --global --unset-all sendemail.smtpuser
+git config --global --unset-all sendemail.from
+git config --global --unset-all sendemail.smtpserver
+git config --global --unset-all sendemail.smtpserverport
+git config --global --unset-all sendemail.smtpencryption
+
+git config --global sendemail.smtpserver smtp.gmail.com
+git config --global sendemail.smtpserverport 587
+git config --global sendemail.smtpencryption tls
+git config --global sendemail.smtpuser eric039eric@gmail.com
+git config --global sendemail.from "Chen-Shi-Hong <eric039eric@gmail.com>"
+git config --global sendemail.confirm auto
+eric0@ERIC039ERIC:~/src/linux$ git config --global --get sendemail.smtpuser
+git config --global --get sendemail.from
+git config --global --get sendemail.smtpserver
+git config --global --get sendemail.smtpserverport
+git config --global --get sendemail.smtpencryption
+eric039eric@gmail.com
+Chen-Shi-Hong <eric039eric@gmail.com>
+smtp.gmail.com
+587
+tls
+eric0@ERIC039ERIC:~/src/linux$ git send-email --to eric039eric@gmail.com ~/patches/0001-*.patch
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+(mbox) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'From: Chen-Shi-Hong <eric039eric@gmail.com>'
+(body) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>'
+
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: eric039eric@gmail.com
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 08:01:39 +0800
+Message-ID: <20260512000143.3104-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
+Password for 'smtp://eric039eric%40gmail.com@smtp.gmail.com:587':
+5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2baf1e35eb3sm117044825ad.41 - gsmtp
+eric0@ERIC039ERIC:~/src/linux$ git config --global --unset-all sendemail.smtpuser
+git config --global --unset-all sendemail.from
+git config --global sendemail.smtpserver smtp.gmail.com
+git config --global sendemail.smtpserverport 587
+git config --global sendemail.smtpencryption tls
+git config --global sendemail.smtpuser eric039eric@gmail.com
+git config --global sendemail.from "Chen-Shi-Hong <eric039eric@gmail.com>"
+git config --global sendemail.confirm auto
+eric0@ERIC039ERIC:~/src/linux$ git config --global --get sendemail.smtpuser
+git config --global --get sendemail.from
+eric039eric@gmail.com
+Chen-Shi-Hong <eric039eric@gmail.com>
+eric0@ERIC039ERIC:~/src/linux$ git send-email --to eric039eric@gmail.com ~/patches/0001-*.patch
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+(mbox) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'From: Chen-Shi-Hong <eric039eric@gmail.com>'
+(body) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>'
+
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: eric039eric@gmail.com
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 08:06:29 +0800
+Message-ID: <20260512000637.3204-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
+Password for 'smtp://eric039eric%40gmail.com@smtp.gmail.com:587':
+OK. Log says:
+Server: smtp.gmail.com
+MAIL FROM:<eric039eric@gmail.com>
+RCPT TO:<eric039eric@gmail.com>
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: eric039eric@gmail.com
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 08:06:29 +0800
+Message-ID: <20260512000637.3204-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Result: 250
+eric0@ERIC039ERIC:~/src/linux$ git send-email \
+  --to corbet@lwn.net \
+  --cc skhan@linuxfoundation.org \
+  --cc workflows@vger.kernel.org \
+  --cc linux-doc@vger.kernel.org \
+  --cc linux-kernel@vger.kernel.org \
+  ~/patches/0001-*.patch
+/home/eric0/patches/0001-docs-fix-spelling-of-Shepherd-in-howto.patch
+(mbox) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'From: Chen-Shi-Hong <eric039eric@gmail.com>'
+(body) Adding cc: Chen-Shi-Hong <eric039eric@gmail.com> from line 'Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>'
+
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: corbet@lwn.net
+Cc: skhan@linuxfoundation.org,
+        workflows@vger.kernel.org,
+        linux-doc@vger.kernel.org,
+        linux-kernel@vger.kernel.org,
+        Chen-Shi-Hong <eric039eric@gmail.com>
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 08:09:44 +0800
+Message-ID: <20260512000946.3234-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
+Password for 'smtp://eric039eric%40gmail.com@smtp.gmail.com:587':
+OK. Log says:
+Server: smtp.gmail.com
+MAIL FROM:<eric039eric@gmail.com>
+RCPT TO:<corbet@lwn.net>
+RCPT TO:<skhan@linuxfoundation.org>
+RCPT TO:<workflows@vger.kernel.org>
+RCPT TO:<linux-doc@vger.kernel.org>
+RCPT TO:<linux-kernel@vger.kernel.org>
+RCPT TO:<eric039eric@gmail.com>
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+To: corbet@lwn.net
+Cc: skhan@linuxfoundation.org,
+        workflows@vger.kernel.org,
+        linux-doc@vger.kernel.org,
+        linux-kernel@vger.kernel.org,
+        Chen-Shi-Hong <eric039eric@gmail.com>
+Subject: [PATCH] docs: fix spelling of Shepherd in howto
+Date: Tue, 12 May 2026 08:09:44 +0800
+Message-ID: <20260512000946.3234-1-eric039eric@gmail.com>
+X-Mailer: git-send-email 2.53.0
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Result: 250
+eric0@ERIC039ERIC:~/src/linux$ git log --oneline -n 1
+bfcbd2ed4ce9 (HEAD -> shihong-first-doc-patch) docs: fix spelling of Shepherd in howto
+eric0@ERIC039ERIC:~/src/linux$ git show --stat --oneline HEAD
+bfcbd2ed4ce9 (HEAD -> shihong-first-doc-patch) docs: fix spelling of Shepherd in howto
+ Documentation/process/howto.rst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
