@@ -1,60 +1,57 @@
 # Linux Kernel Contribution Log
 
-這個 repository 用來持續記錄 Linux kernel 貢獻過程，不只是放 patch，而是把每一次的學習、問題、決策與回顧都保存下來，讓之後的第二個、第三個 patch 可以越走越順。[cite:148][cite:47]
+> Chen-Shi-Hong 的 Linux kernel 貢獻學習紀錄
+> 從第一個 Documentation patch 開始，逐步累積。
 
-這份紀錄特別適合用在「AI 當教練 + 自己動手驗證」的學習方式，因為每次遇到環境設定、checkpatch、maintainer、send-email 或 review 問題時，都能留下可以複用的經驗。[cite:149][cite:148]
+---
 
-## Repository 目的
+## 關於這個 repo
 
-- 記錄每一次 Linux kernel patch 的完整流程。
-- 建立可重複使用的投稿 SOP。
-- 保存每次 review 與修正版的學習點。
-- 把零散經驗整理成自己的長期知識庫。
+這個 repo 不是 Linux kernel 的 fork，
+而是我個人學習「如何對 Linux kernel 做貢獻」的過程紀錄。
 
-## 建議目錄結構
+每一次送出 patch，就新增一個資料夾記錄：
+- 這次改了什麼
+- 遇到什麼問題、怎麼解決
+- patch 的完整內容
+- 學到了什麼
 
-```text
-linux-kernel-contribution-log/
-├─ README.md
-├─ 00_profile/
-│  └─ learning-goals.md
-├─ 01_environment/
-│  └─ wsl-kernel-dev-setup.md
-├─ 02_patches/
-│  ├─ 2026-05-12-first-doc-patch/
-│  │  ├─ note.md
-│  │  ├─ patch.md
-│  │  ├─ review-log.md
-│  │  └─ assets/
-├─ 03_templates/
-│  ├─ patch-note-template.md
-│  ├─ review-reply-template.md
-│  └─ postmortem-template.md
-└─ 04_lessons/
-   └─ kernel-contribution-playbook.md
+---
+
+## 目錄結構
+
+```
+Linux_kernel/
+├── README.md                          ← 這個檔案
+├── setup/
+│   └── wsl2-env-setup.md             ← WSL2 開發環境設定紀錄
+├── learning/
+│   └── kernel-workflow.md            ← Linux kernel 協作流程筆記
+└── patches/
+    └── 2026-05-12-doc-howto-shepherd/
+        └── notes.md                  ← 第一個 patch 完整學習筆記
 ```
 
-## 第一個 patch 摘要
+---
 
-- 類型：文件 typo 修正。[cite:148]
-- 檔案：`Documentation/process/howto.rst`。[cite:148]
-- 修改內容：`Alex Shepard` 改成 `Alex Shepherd`。[cite:148]
-- branch：`shihong-first-doc-patch`。[cite:148]
-- 核心流程：`codespell` → `checkpatch.pl` → `git add` → `git commit -s` → `git format-patch` → `scripts/get_maintainer.pl` → `git send-email`。[cite:148]
+## Patch 紀錄
 
-## 建議使用方式
+| # | 日期 | 子系統 | 說明 | 狀態 |
+|---|------|--------|------|------|
+| 1 | 2026-05-12 | `Documentation` | 修正 `howto.rst` 中 Shepherd 拼字錯誤 | ✅ 已送出 |
 
-每完成一次 patch，就在 `02_patches/日期-主題/` 建一個資料夾，至少留下四份紀錄：
+---
 
-- `note.md`：這次做了什麼、為什麼這樣做。
-- `patch.md`：patch 內容摘要、命令、寄送對象。
-- `review-log.md`：收到的 review 與修正計畫。
-- `assets/`：截圖、終端機輸出、補充資料。
+## 環境
 
-## 長期維護建議
+- OS：Windows 11 + WSL2 Ubuntu
+- Kernel source：`git.kernel.org/torvalds/linux.git`（v7.1-rc3）
+- Branch：`shihong-first-doc-patch`
+- 寄送工具：`git send-email` + Gmail SMTP + App Password
 
-- 每次只記錄一個 patch 主題，避免混在一起。
-- 每次都寫「學到什麼」與「下次會怎麼更快」。
-- 建立自己的 commit message 模板與 send-email 模板。
-- 第二個 patch 開始就要保留 review 回信與 v2 變更摘要。
+---
 
+## 聯絡
+
+- GitHub：[eric039eric](https://github.com/eric039eric)
+- Email：eric039eric@gmail.com
