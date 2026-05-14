@@ -1,0 +1,32 @@
+From 0ace4a32eb76fff51f53b4c077dc63001fd3fb74 Mon Sep 17 00:00:00 2001
+From: Chen-Shi-Hong <eric039eric@gmail.com>
+Date: Thu, 14 May 2026 23:24:40 +0800
+Subject: [PATCH] docs: hwmon: sy7636a: fix temperature sysfs attribute name
+
+The hwmon sysfs naming convention uses
+temp[1-*]_input for temperature channels.
+
+Documentation/hwmon/sy7636a-hwmon.rst currently documents
+temp0_input, while the driver uses the standard hwmon
+temperature channel interface.
+
+Update the documentation to use temp1_input.
+
+Signed-off-by: Chen-Shi-Hong <eric039eric@gmail.com>
+---
+ Documentation/hwmon/sy7636a-hwmon.rst | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Documentation/hwmon/sy7636a-hwmon.rst b/Documentation/hwmon/sy7636a-hwmon.rst
+index 0143ce0e5db7..03d866aba6e8 100644
+--- a/Documentation/hwmon/sy7636a-hwmon.rst
++++ b/Documentation/hwmon/sy7636a-hwmon.rst
+@@ -22,5 +22,5 @@ The following sensors are supported
+ sysfs-Interface
+ ---------------
+ 
+-temp0_input
++temp1_input
+ 	- Temperature of external NTC (milli-degree C)
+-- 
+2.53.0
